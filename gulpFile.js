@@ -14,10 +14,11 @@ var webpackConfig = {
     },
     output: {
         path: path.join(__dirname),
-        filename: "bundle.js"
+        filename: 'lp-core.js'
     },
     externals: {
-        'angular': 'angular'
+        'angular': 'angular',
+        'jquery': 'jquery'
     },
     module: {
         loaders: [
@@ -42,10 +43,10 @@ gulp.task('default', function (callback) {
     var compiler = webpack(webpackConfig);
     new WebpackDevServer(compiler, {
         // server and middleware options
-    }).listen(3000, "localhost", function(err) {
-        if(err) throw new gutil.PluginError("webpack-dev-server", err);
+    }).listen(3000, 'localhost', function(err) {
+        if(err) throw new gutil.PluginError('webpack-dev-server', err);
         // Server listening
-        gutil.log("[webpack-dev-server]", "http://localhost:3000/webpack-dev-server/index.html");
+        gutil.log('[webpack-dev-server]', 'http://localhost:3000/webpack-dev-server/index.html');
 
         // keep the server alive or continue?
         // callback();
