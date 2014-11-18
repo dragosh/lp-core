@@ -1,0 +1,23 @@
+{
+  "name": "LP-Core",
+  "main": "LP-Core.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/dragosh/LP-Core",
+  "authors": [
+    "dragosh-bb <dragos@backbase.com>"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "hammerjs": "~2.0.4"
+  }
+}
